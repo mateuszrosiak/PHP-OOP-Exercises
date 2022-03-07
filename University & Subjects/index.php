@@ -6,6 +6,8 @@ require_once "University.php";
 
 $university = new University();
 $subject = $university->addSubject('112', 'Web II');
+//print_r($subject);
+
 $subject->addStudent('George', '123');
 $subject->addStudent("Mary", '234');
 $university->addStudentOnSubject('112', new Student('David', '345'));
@@ -16,6 +18,7 @@ $subject2->addStudent('Brad', '567');
 
 echo $university->getNumberOfStudents(); // This must print 5, because we totally added 5 students in different subjects
 
+echo "<br>";
 /**
  * This method must print all subjects and for each subject all students registered on the subject int the following format
  *

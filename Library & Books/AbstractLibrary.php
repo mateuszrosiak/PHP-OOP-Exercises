@@ -49,7 +49,7 @@ abstract class AbstractLibrary
      * @param string $bookName
      * @return Book
      */
-    abstract public function search(string $bookName): Book;
+    abstract public function search(string $bookName): ?Book;
 
     /**
      * This method must print every author and for each author all its books in the following format

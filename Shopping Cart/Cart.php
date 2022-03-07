@@ -23,7 +23,7 @@ class Cart
      */
     public function addProduct(Product $product, int $quantity): CartItem
     {
-        //TODO Implement method
+        $product = new Product($this->getId())
     }
 
     /**
